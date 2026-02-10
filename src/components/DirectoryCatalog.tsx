@@ -3,7 +3,7 @@ import type { CollectionEntry } from "astro:content";
 import type { IconifyIconBuildResult } from "@iconify/utils";
 import { setSearchParams } from "~/util/url";
 
-export type ProductData = CollectionEntry<"products"> & {
+export type ProductData = CollectionEntry<"directory"> & {
 	icon?: IconifyIconBuildResult;
 	groups: string[];
 };

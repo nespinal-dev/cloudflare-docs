@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 import dedent from "dedent";
 
 export const GET: APIRoute = async () => {
-	const products = await getCollection("products", (p) => {
+	const products = await getCollection("directory", (p) => {
 		return p.data.product.group?.toLowerCase() === "developer platform";
 	});
 

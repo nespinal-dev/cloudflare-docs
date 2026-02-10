@@ -3,7 +3,7 @@ import ReactSelect, { type Option } from "../ReactSelect";
 import { useEffect, useState } from "react";
 
 interface Props {
-	products: CollectionEntry<"products">[];
+	products: CollectionEntry<"directory">[];
 	groups: string[];
 }
 

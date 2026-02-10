@@ -8,9 +8,9 @@ import DirectoryCatalog from "~/components/DirectoryCatalog";
 import type { ProductData } from "~/components/DirectoryCatalog";
 import type { StarlightPageProps } from "@astrojs/starlight/props";
 
-let products: CollectionEntry<"products">[] = await getCollection(
-	"products",
-	(entry: CollectionEntry<"products">) => {
+let products: CollectionEntry<"directory">[] = await getCollection(
+	"directory",
+	(entry: CollectionEntry<"directory">) => {
 		return entry.data.product?.show ?? true;
 	},
 );

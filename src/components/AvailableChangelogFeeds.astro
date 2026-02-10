@@ -13,7 +13,7 @@ const productsInChangelog = changelogs.flatMap((entry) =>
 	entry.data.products.map((product) => product.id),
 );
 
-const products = await getCollection("products", (entry) => {
+const products = await getCollection("directory", (entry) => {
 	return productsInChangelog.includes(entry.id);
 });
 
